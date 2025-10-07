@@ -31,7 +31,7 @@ Sigue los pasos para ejecutar el proyecto en tu entorno local:
 
 ```bash
 # 1. Clona este repositorio
-git clone https://github.com/tuusuario/advancedline-cooling-web.git
+git clone https://github.com/jAlejandroGM/advancedline-cooling-web.git
 
 # 2. Accede al directorio
 cd advancedline-cooling-web
