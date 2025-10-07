@@ -1,3 +1,9 @@
+:root {
+  --color-whatsapp: #25d366;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
