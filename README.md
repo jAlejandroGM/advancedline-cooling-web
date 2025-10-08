@@ -1,5 +1,7 @@
 # 🌐 Advanced Line Cooling — Sitio Web Oficial
 
+![Advanced Line Cooling - Logo y Slogan](public/banner-low.jpeg)
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
