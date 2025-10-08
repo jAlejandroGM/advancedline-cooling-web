@@ -1,0 +1,7 @@
+{
+  "topbar": {
+    "email-aria-label": "Enviar correo a contacto@alcooling.com",
+    "tel-aria-label": "Llamar al +51 999 999 999",
+    "wsp-aria-label": "Chatea por WhatsApp"
+  }
+}
