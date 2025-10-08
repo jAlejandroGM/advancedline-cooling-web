@@ -2,15 +2,32 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Collapse } from "bootstrap";
 import { FaBars } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 const Navbar = () => {
   const { t } = useTranslation();
 
+  const toggleNav = () => {
+    const el = document.getElementById("mainNav");
+    if (!el) return;
+    const bsCollapse = Collapse.getOrCreateInstance(el);
+    bsCollapse.toggle();
+  };
+
+  const handleNavClick = () => {
+    const el = document.getElementById("mainNav");
+    if (!el) return;
+    if (el.classList.contains("show")) {
+      const bsCollapse = Collapse.getOrCreateInstance(el);
+      bsCollapse.hide();
+    }
+  };
+
   return (
     <nav
-      className={`navbar navbar-expand-md ${styles["bg-nav"]}`}
+      className={`navbar navbar-expand-md py-2 py-md-3 ${styles["bg-nav"]}`}
       aria-label={t("navbar.navbar-aria-label")}
     >
       <div className="container">
@@ -24,10 +41,6 @@ const Navbar = () => {
             alt="ALCooling logo"
             className={styles.brandLogo}
             decoding="async"
-            onError={(e) => {
-              e.currentTarget.onerror = null;
-              e.currentTarget.src = "/vite.svg";
-            }}
           />
         </Link>
 
@@ -35,13 +48,11 @@ const Navbar = () => {
         <button
           className={`navbar-toggler ${styles["navbar-toggler-color"]}`}
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
           aria-controls="mainNav"
-          aria-expanded="false"
           aria-label={t("navbar.navbar-aria-label-toggler")}
+          onClick={toggleNav}
         >
-          <FaBars size={22} aria-hidden="true" />
+          <FaBars className={styles.togglerIcon} aria-hidden="true" />
         </button>
 
         {/* Collapsible content */}
@@ -52,10 +63,11 @@ const Navbar = () => {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 fs-5 ${styles.navLink} ${
+                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
+                onClick={handleNavClick}
               >
                 {t("navbar.home")}
               </NavLink>
@@ -64,10 +76,11 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 fs-5 ${styles.navLink} ${
+                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
+                onClick={handleNavClick}
               >
                 {t("navbar.about")}
               </NavLink>
@@ -76,10 +89,11 @@ const Navbar = () => {
               <NavLink
                 to="/knowledge"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 fs-5 ${styles.navLink} ${
+                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
+                onClick={handleNavClick}
               >
                 {t("navbar.knowledge")}
               </NavLink>
@@ -88,10 +102,11 @@ const Navbar = () => {
               <NavLink
                 to="/products"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 fs-5 ${styles.navLink} ${
+                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
+                onClick={handleNavClick}
               >
                 {t("navbar.products")}
               </NavLink>
@@ -100,10 +115,11 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 fs-5 ${styles.navLink} ${
+                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
+                onClick={handleNavClick}
               >
                 {t("navbar.contact")}
               </NavLink>
