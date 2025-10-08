@@ -15,7 +15,7 @@ function Topbar() {
           className={`d-flex flex-column flex-sm-row align-items-center gap-2 gap-md-4 ${styles["contact-info"]} text-center text-md-start`}
         >
           <span className="d-flex align-items-center gap-1">
-            <FaEnvelope color="white" size={14} />
+            <FaEnvelope color="var(--color-titles)" size={14} />
             <a
               href="mailto:contacto@alcooling.com"
               aria-label={t("topbar.email-aria-label")}
@@ -25,7 +25,11 @@ function Topbar() {
           </span>
           |
           <span className="d-flex align-items-center gap-1">
-            <FaPhone color="white" size={14} />
+            <FaPhone
+              color="var(--color-titles)"
+              size={14}
+              className={styles.FaPhone}
+            />
             <a href="tel:+51999999999" aria-label={t("topbar.tel-aria-label")}>
               +51&nbsp;999&nbsp;999&nbsp;999
             </a>

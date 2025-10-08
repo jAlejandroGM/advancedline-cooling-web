@@ -1,6 +1,10 @@
 .contact-info {
   font-size: 0.8rem;
 }
+
+.FaPhone {
+  transform: scaleX(-1);
+}
 .wsp-btn {
   color: var(--color-whatsapp);
 }
