@@ -1,0 +1,55 @@
+.bg-nav {
+  background-color: var(--color-bg-primary);
+}
+
+.navLink {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+  position: relative;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15em;
+  height: 2px;
+  background-color: var(--color-wood);
+  width: 0;
+  transition: width 200ms ease-in-out;
+}
+
+.navLink:hover,
+.navLink:focus,
+.navLink:focus-visible {
+  color: var(--color-wood);
+}
+
+.active {
+  color: var(--color-wood);
+  font-weight: 500;
+}
+
+.navLink.active {
+  color: var(--color-wood);
+  font-weight: 500;
+}
+
+.active::after,
+.navLink.active::after {
+  width: 100%;
+}
+
+.brandLogo {
+  display: block;
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .brandLogo {
+    height: 44px;
+  }
+}

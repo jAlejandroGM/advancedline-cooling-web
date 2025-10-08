@@ -3,5 +3,15 @@
     "email-aria-label": "Send an email to contacto@alcooling.com",
     "tel-aria-label": "Call +51 999 999 999",
     "wsp-aria-label": "Chat on WhatsApp"
+  },
+  "navbar": {
+    "navbar-aria-label": "Main navigation",
+    "logo-aria-label": "Go to home page",
+    "navbar-aria-label-toggler": "Open main menu",
+    "home": "Home",
+    "about": "About",
+    "knowledge": "Knowledge",
+    "products": "Products",
+    "contact": "Contact us"
   }
 }
