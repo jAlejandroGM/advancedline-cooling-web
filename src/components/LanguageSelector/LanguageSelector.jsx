@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./LanguageSelector.module.css";
 import { useTranslation } from "react-i18next";
 
 function LanguageSelector() {
@@ -6,21 +7,22 @@ function LanguageSelector() {
 
   return (
     <nav aria-label="Selector de idioma">
-      <ul className="list-inline mb-0">
-        <li className="list-inline-item">
+      <ul className="list-inline m-0">
+        <li className="list-inline-item m-0">
           <button
-            className={`btn btn-link btn-sm text-white${
-              i18n.language === "es" ? " fw-bold" : ""
+            className={`btn btn-link btn-sm text-white ${styles.noUnderline}${
+              i18n.language === "es" ? " fw-bold text-decoration-underline" : ""
             }`}
             onClick={() => i18n.changeLanguage("es")}
           >
             ES
           </button>
         </li>
-        <li className="list-inline-item">
+        /
+        <li className="list-inline-item m-0">
           <button
-            className={`btn btn-link btn-sm text-white${
-              i18n.language === "en" ? " fw-bold" : ""
+            className={`btn btn-link btn-sm text-white ${styles.noUnderline}${
+              i18n.language === "en" ? " fw-bold text-decoration-underline" : ""
             }`}
             onClick={() => i18n.changeLanguage("en")}
           >
