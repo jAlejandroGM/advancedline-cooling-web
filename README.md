@@ -6,8 +6,10 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![i18n](https://img.shields.io/badge/i18n-ready-green?style=for-the-badge)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-blue?style=for-the-badge)
+![Licencia](https://img.shields.io/badge/Licencia-Privada-red?style=for-the-badge)
 
 Sitio web corporativo desarrollado para **Advanced Line Cooling S.A.C.**, una empresa dedicada a la **venta y distribución de radiadores y sistemas de refrigeración para camiones de carga pesada y maquinaria industrial**.  
 El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápida y optimizada**, donde los clientes puedan conocer la empresa, sus productos y sus vías de contacto de forma clara y profesional.
@@ -22,6 +24,7 @@ El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápid
 - 🎨 **HTML5 & CSS3** — Maquetación y estilos base
 - 🧱 **SWC** — Compilador de alto rendimiento
 - 🌐 **Git & GitHub** — Control de versiones y despliegue
+- 🌎 **React-i18next** — Internacionalización y soporte multilenguaje
 
 ---
 
@@ -55,10 +58,12 @@ advancedline-cooling-web/
 ├── src/
 │   ├── assets/           # Recursos multimedia e íconos
 │   ├── components/       # Componentes reutilizables (Navbar, Footer, etc.)
+│   ├── locales/          # Archivos de traducción por idioma
 │   ├── pages/            # Páginas principales (Home, About, Products, Contact)
 │   ├── routes/           # Definición de rutas con React Router
 │   ├── styles/           # Estilos globales o módulos CSS
 │   ├── App.jsx           # Componente principal de la aplicación
+│   ├── i18n.js           # Configuración de internacionalización
 │   └── main.jsx          # Punto de entrada del proyecto
 ├── index.html            # Documento base HTML
 ├── package.json          # Configuración del proyecto y scripts
@@ -67,9 +72,19 @@ advancedline-cooling-web/
 
 ---
 
+## 🌎 Internacionalización
+
+El sitio soporta cambio dinámico de idioma (**Español** 🇪🇸 / **Inglés** 🇬🇧) gracias a la integración de [React-i18next](https://react.i18next.com/).
+
+- 🌐 Todos los textos de la interfaz están centralizados en archivos de traducción dentro de `locales/`.
+- 💾 El idioma seleccionado se guarda automáticamente en el navegador.
+- 📝 Para agregar o modificar traducciones, edita los archivos `translation.json` en las carpetas de cada idioma.
+
+---
+
 ## 📸 Vista previa
 
-Próximamente imágenes del diseño y versión final del sitio.
+![Preview](https://img.shields.io/badge/Preview-Próximamente-yellow?style=for-the-badge)
 
 ---
 
@@ -82,7 +97,7 @@ No se permite su redistribución, modificación o uso comercial sin autorizació
 
 ## 👨‍💻 Autor
 
-Desarrollado con dedicación por  
+Desarrollado con ☕ por  
 **José Alejandro Guzmán Mendoza**  
 [🌍 **GitHub**](https://github.com/jAlejandroGM)
 
