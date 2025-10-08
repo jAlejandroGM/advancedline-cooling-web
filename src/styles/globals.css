@@ -2,6 +2,14 @@
   --color-whatsapp: #25d366;
   --color-black: #000;
   --color-white: #fff;
+  --color-bg-primary: #031231;
+  --color-bg-secondary: #041331;
+  --color-titles: #038de2;
+  --color-text: #e0e7eb;
+  --color-metal-gray: #a4b4be;
+  --color-darker-gray: #466076;
+  --color-wood: #a44515;
+  --color-dark-wood: #723825;
 }
 
 * {
@@ -16,7 +24,6 @@
   grid-template-rows: auto auto 1fr auto;
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   line-height: 1.5;
-  gap: 6rem;
 }
 
 ul {
