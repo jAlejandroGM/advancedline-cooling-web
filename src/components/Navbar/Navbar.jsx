@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container">
         <Link
           to="/"
-          className="navbar-brand p-0 m-0 text-decoration-none"
+          className="navbar-brand p-0 m-0"
           aria-label={t("navbar.logo-aria-label")}
         >
           <img
@@ -41,6 +41,7 @@ const Navbar = () => {
             alt="ALCooling logo"
             className={styles.brandLogo}
             decoding="async"
+            onClick={handleNavClick}
           />
         </Link>
 
@@ -55,7 +56,7 @@ const Navbar = () => {
           <FaBars className={styles.togglerIcon} aria-hidden="true" />
         </button>
 
-        {/* Collapsible content */}
+        {/* Content */}
         <div className="collapse navbar-collapse" id="mainNav">
           <ul className="navbar-nav ms-auto align-items-md-center">
             <li className="nav-item">
@@ -63,7 +64,7 @@ const Navbar = () => {
                 to="/"
                 end
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
+                  `nav-link fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
@@ -76,7 +77,7 @@ const Navbar = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
+                  `nav-link fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
@@ -89,7 +90,7 @@ const Navbar = () => {
               <NavLink
                 to="/knowledge"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
+                  `nav-link fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
@@ -102,7 +103,7 @@ const Navbar = () => {
               <NavLink
                 to="/products"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
+                  `nav-link fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
@@ -115,7 +116,7 @@ const Navbar = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `nav-link px-2 px-md-3 py-2 fs-6 fs-md-5 ${styles.navLink} ${
+                  `nav-link fs-md-5 ${styles.navLink} ${
                     isActive ? styles.active : ""
                   }`
                 }
@@ -126,7 +127,7 @@ const Navbar = () => {
             </li>
 
             {/* Language selector only on mobile (Topbar shows it on md+) */}
-            <li className="nav-item d-md-none mt-2">
+            <li className="nav-item d-md-none">
               <LanguageSelector />
             </li>
           </ul>
