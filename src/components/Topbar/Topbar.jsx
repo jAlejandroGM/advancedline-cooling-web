@@ -2,6 +2,7 @@ import React from "react";
 import { FaWhatsapp, FaEnvelope, FaPhone } from "react-icons/fa";
 import styles from "./Topbar.module.css";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 function Topbar() {
   const { t } = useTranslation();
@@ -43,19 +44,7 @@ function Topbar() {
           </a>
         </div>
         {/* Idiomas  */}
-        {/* Crear componente para Idiomas con Hook para detectar si la pantalla es desktop o mobile */}
-        <div className="mt-2 mt-md-0">
-          <nav aria-label="Selector de idioma">
-            <ul className="list-inline mb-0">
-              <li className="list-inline-item">
-                <button className="btn btn-link btn-sm text-white">ES</button>
-              </li>
-              <li className="list-inline-item">
-                <button className="btn btn-link btn-sm text-white">EN</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <LanguageSelector />
       </div>
     </div>
   );

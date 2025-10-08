@@ -1,5 +1,7 @@
 {
   "topbar": {
-    "email-aria-label": "Send an email to contacto@alcooling.com"
+    "email-aria-label": "Send an email to contacto@alcooling.com",
+    "tel-aria-label": "Call +51 999 999 999",
+    "wsp-aria-label": "Chat on WhatsApp"
   }
 }
