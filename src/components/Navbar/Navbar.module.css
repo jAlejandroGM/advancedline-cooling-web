@@ -2,6 +2,11 @@
   background-color: var(--color-bg-primary);
 }
 
+.navbar-toggler-color {
+  color: var(--color-wood);
+  border-color: var(--color-wood);
+}
+
 .navLink {
   color: var(--color-white);
   text-decoration: none;
@@ -24,11 +29,6 @@
 .navLink:focus,
 .navLink:focus-visible {
   color: var(--color-wood);
-}
-
-.active {
-  color: var(--color-wood);
-  font-weight: 500;
 }
 
 .navLink.active {

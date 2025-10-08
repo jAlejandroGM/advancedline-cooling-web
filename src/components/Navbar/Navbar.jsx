@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { FaBars } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
 
         {/* Toggler for mobile */}
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${styles["navbar-toggler-color"]}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mainNav"
@@ -40,7 +41,7 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label={t("navbar.navbar-aria-label-toggler")}
         >
-          <span className="navbar-toggler-icon"></span>
+          <FaBars size={22} aria-hidden="true" />
         </button>
 
         {/* Collapsible content */}
