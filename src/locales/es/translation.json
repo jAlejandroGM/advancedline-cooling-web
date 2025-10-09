@@ -13,5 +13,16 @@
     "knowledge": "Conocimiento",
     "products": "Productos",
     "contact": "Contáctanos"
+  },
+  "footer": {
+    "logo-aria-label": "Ir a inicio",
+    "slogan": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Breve texto que puede ser tu slogan o una descripción de la propuesta de valor.",
+    "contact": "Contáctanos",
+    "dir": "Lima, Perú",
+    "legal": {
+      "copyrigth": "Todos los derechos reservados.",
+      "designedBy": "Diseñado y desarrollado con ☕ por",
+      "aria-label": "Ir al perfil de GitHub de Alejandro Guzmán"
+    }
   }
 }

@@ -1,0 +1,65 @@
+.footerTop {
+  background-color: var(--color-wood);
+  color: var(--color-white);
+}
+.footerLogoImg {
+  display: block;
+  max-width: 140px;
+  height: auto;
+}
+.footerSlogan {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.footerLink {
+  transition: color 0.2s ease-in-out;
+}
+.footerLink:hover,
+.footerLink:focus {
+  color: var(--color-titles);
+  text-decoration: underline;
+}
+.footerBottom {
+  color: #bbb;
+  font-size: 0.8rem;
+}
+.footerBottom a {
+  color: var(--color-titles);
+}
+.footerBottom a:hover,
+.footerBottom a:focus {
+  text-decoration: underline;
+}
+
+footer h6 {
+  color: var(--color-titles);
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.phoneIcon {
+  transform: scaleX(-1);
+}
+
+.wspCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: var(--color-whatsapp);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.wspCta:hover,
+.wspCta:focus {
+  background: rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
