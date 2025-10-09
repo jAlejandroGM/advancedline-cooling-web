@@ -99,7 +99,7 @@ No se permite su redistribución, modificación o uso comercial sin autorizació
 
 ## 👨‍💻 Autor
 
-Desarrollado con ☕ por  
+Diseñado y desarrollado con ☕ por
 **José Alejandro Guzmán Mendoza**  
 [🌍 **GitHub**](https://github.com/jAlejandroGM)
 
