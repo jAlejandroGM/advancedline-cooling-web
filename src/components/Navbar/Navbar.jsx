@@ -53,7 +53,10 @@ const Navbar = () => {
           aria-label={t("navbar.navbar-aria-label-toggler")}
           onClick={toggleNav}
         >
-          <FaBars className={styles.togglerIcon} aria-hidden="true" />
+          <FaBars
+            className={`d-flex align-items-center ${styles.togglerIcon}`}
+            aria-hidden="true"
+          />
         </button>
 
         {/* Content */}
