@@ -21,10 +21,11 @@ El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápid
 ## 🚀 Tecnologías utilizadas
 
 - ⚛️ **React** — Librería principal para la interfaz de usuario
-- ⚡ **Vite** — Entorno de desarrollo ultrarrápido
+- ⚡ **Vite (React + SWC)** — Entorno de desarrollo ultrarrápido con compilación SWC
 - 🧩 **JavaScript (ESNext)** — Lenguaje base del proyecto
-- 🎨 **HTML5 & CSS3** — Maquetación y estilos base
-- 🧱 **SWC** — Compilador de alto rendimiento
+- 🎨 **HTML5 semántico** — Maquetación accesible y estructurada
+- 🎯 **CSS Modules** — Estilos encapsulados por componente/página
+- 🟣 **Bootstrap 5** — Sistema de diseño y utilidades responsive
 - 🌐 **Git & GitHub** — Control de versiones y despliegue
 - 🌎 **React-i18next** — Internacionalización y soporte multilenguaje
 
