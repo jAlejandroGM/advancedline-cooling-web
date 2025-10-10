@@ -1,0 +1,58 @@
+/* Hero */
+.hero {
+  background: linear-gradient(
+      180deg,
+      rgba(3, 18, 49, 0.8),
+      rgba(3, 18, 49, 0.9)
+    ),
+    url("/banner-low.jpeg") center/cover no-repeat;
+  color: var(--color-white);
+  padding: 4rem 0;
+}
+
+.heroContent {
+  padding: 2rem 0;
+}
+
+/* About illustration placeholder */
+.aboutIllustration {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-titles) 0%,
+    var(--color-wood) 100%
+  );
+  opacity: 0.85;
+}
+
+/* Products */
+.productCard {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.productThumb {
+  height: 160px;
+  background: linear-gradient(
+    135deg,
+    rgba(3, 141, 226, 0.15),
+    rgba(164, 69, 21, 0.15)
+  );
+}
+
+/* Why choose us */
+.benefitIcon {
+  color: var(--color-titles);
+  flex-shrink: 0;
+  font-size: 1.25rem;
+}
+
+/* Contact CTA */
+.contactCta {
+  background: linear-gradient(
+    0deg,
+    rgba(3, 18, 49, 0.03),
+    rgba(3, 18, 49, 0.03)
+  );
+}

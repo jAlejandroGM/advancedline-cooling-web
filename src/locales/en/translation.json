@@ -24,5 +24,58 @@
       "designedBy": "Designed and developed with ☕ by",
       "aria-label": "Go to Alejandro Guzmán's GitHub profile"
     }
+  },
+  "home": {
+    "hero": {
+      "aria": "ALCooling hero",
+      "title": "Cooling and HVAC solutions",
+      "subtitle": "Equipment, installation, and professional maintenance for homes and businesses.",
+      "ctaProducts": "View products",
+      "ctaProductsAria": "Go to products",
+      "ctaContact": "Contact us",
+      "ctaContactAria": "Go to contact page"
+    },
+    "about": {
+      "title": "About us",
+      "text": "We are specialists in thermal solutions with years of experience delivering quality, efficiency, and support.",
+      "cta": "Learn more",
+      "ctaAria": "Go to About page"
+    },
+    "products": {
+      "title": "Featured products",
+      "subtitle": "A selection of our most requested lines",
+      "viewAll": "View all",
+      "cta": "See details",
+      "items": [
+        {
+          "title": "Split air conditioner",
+          "desc": "Efficiency and comfort for residential and commercial spaces."
+        },
+        {
+          "title": "Refrigeration chambers",
+          "desc": "Modular solutions for cold storage and logistics."
+        },
+        {
+          "title": "Industrial equipment",
+          "desc": "Reliable performance for processes and large areas."
+        }
+      ]
+    },
+    "why": {
+      "title": "Why choose us",
+      "items": [
+        "Certified technical service",
+        "Guaranteed installation and maintenance",
+        "After-sales support and spare parts",
+        "Energy efficiency and savings"
+      ]
+    },
+    "cta": {
+      "aria": "Contact call to action",
+      "title": "Ready to get started?",
+      "subtitle": "Let's discuss your project and find the best solution.",
+      "whatsapp": "Message us on WhatsApp",
+      "contact": "Write to us"
+    }
   }
 }
