@@ -9,7 +9,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <main>
+    <>
       {/* Hero section */}
       <section className={styles.hero} aria-label={t("home.hero.aria")}>
         <div className="container">
@@ -139,7 +139,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

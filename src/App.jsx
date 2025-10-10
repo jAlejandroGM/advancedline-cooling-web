@@ -8,16 +8,12 @@ function App() {
     <>
       <header>
         <Topbar />
-      </header>
-      <nav>
         <Navbar />
-      </nav>
+      </header>
       <main>
         <AppRoutes />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 }
