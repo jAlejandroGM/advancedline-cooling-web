@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-md py-2 py-md-3 ${styles["bg-nav"]}`}
+      className={`navbar navbar-expand-md sticky-top py-2 py-md-3 ${styles["bg-nav"]}`}
       aria-label={t("navbar.navbar-aria-label")}
     >
       <div className="container">

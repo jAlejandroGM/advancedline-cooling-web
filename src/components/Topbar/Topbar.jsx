@@ -8,7 +8,7 @@ function Topbar() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-black text-white py-1 d-none d-md-block">
+    <header className="bg-black text-white py-1 d-none d-md-block">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
         {/* Contacto */}
         <div
@@ -50,7 +50,7 @@ function Topbar() {
         {/* Idiomas  */}
         <LanguageSelector />
       </div>
-    </div>
+    </header>
   );
 }
 
