@@ -30,7 +30,7 @@ El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápid
 - ✨ **AOS** — Animaciones al hacer scroll para una experiencia visual atractiva
 - 🔗 **react-router-dom** — Enrutamiento SPA para navegación entre páginas
 - 📝 **react-hook-form** — Manejo y validación eficiente de formularios en React
-- 🌎 **React-i18next** — Internacionalización y soporte multilenguaje
+- 🌎 **react-i18next** — Internacionalización y soporte multilenguaje
 - 🌐 **Git & GitHub** — Control de versiones y despliegue
 
 ---
