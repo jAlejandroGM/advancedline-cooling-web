@@ -28,9 +28,10 @@ El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápid
 - 🎯 **CSS Modules** — Estilos encapsulados por componente/página
 - 🟣 **Bootstrap 5** — Sistema de diseño y utilidades responsive
 - ✨ **AOS** — Animaciones al hacer scroll para una experiencia visual atractiva
+- 🔗 **react-router-dom** — Enrutamiento SPA para navegación entre páginas
 - 📝 **react-hook-form** — Manejo y validación eficiente de formularios en React
-- 🌐 **Git & GitHub** — Control de versiones y despliegue
 - 🌎 **React-i18next** — Internacionalización y soporte multilenguaje
+- 🌐 **Git & GitHub** — Control de versiones y despliegue
 
 ---
 
