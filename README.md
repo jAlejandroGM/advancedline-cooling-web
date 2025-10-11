@@ -9,7 +9,8 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![i18n](https://img.shields.io/badge/i18n-ready-green?style=for-the-badge)
+![AOS](https://img.shields.io/badge/AOS-animate--on--scroll-29b6f6?style=for-the-badge)
+![i18n](https://img.shields.io/badge/i18n-internationalization-green?style=for-the-badge)
 ![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-blue?style=for-the-badge)
 ![Licencia](https://img.shields.io/badge/Licencia-Privada-red?style=for-the-badge)
 
@@ -26,6 +27,8 @@ El objetivo del proyecto es ofrecer una **plataforma informativa moderna, rápid
 - 🎨 **HTML5 semántico** — Maquetación accesible y estructurada
 - 🎯 **CSS Modules** — Estilos encapsulados por componente/página
 - 🟣 **Bootstrap 5** — Sistema de diseño y utilidades responsive
+- ✨ **AOS** — Animaciones al hacer scroll para una experiencia visual atractiva
+- 📝 **react-hook-form** — Manejo y validación eficiente de formularios en React
 - 🌐 **Git & GitHub** — Control de versiones y despliegue
 - 🌎 **React-i18next** — Internacionalización y soporte multilenguaje
 
