@@ -43,8 +43,8 @@ const Footer = () => {
             </div>
             <div className="col-12 col-md-6 col-lg-4 ms-lg-auto">
               <h6 className="text-uppercase">{t("footer.contact")}</h6>
-              <ul className="list-unstyled small m-0">
-                <li className="mb-2 d-flex align-items-center gap-2">
+              <address className="not-italic small m-0">
+                <div className="mb-2 d-flex align-items-center gap-2">
                   <FaEnvelope size={14} color="var(--color-titles)" />
                   <a
                     href="mailto:contacto@alcooling.com"
@@ -52,8 +52,8 @@ const Footer = () => {
                   >
                     contacto@alcooling.com
                   </a>
-                </li>
-                <li className="mb-2 d-flex align-items-center gap-2">
+                </div>
+                <div className="mb-2 d-flex align-items-center gap-2">
                   <FaPhone
                     size={14}
                     color="var(--color-titles)"
@@ -62,24 +62,24 @@ const Footer = () => {
                   <a href="tel:+51999999999" className={styles.footerLink}>
                     +51 999 999 999
                   </a>
-                </li>
-                <li className="mb-2 d-flex align-items-center gap-2">
+                </div>
+                <div className="mb-2 d-flex align-items-center gap-2">
                   <FaMapMarkerAlt size={14} color="var(--color-titles)" />
                   <span className="d-block">{t("footer.dir")}</span>
-                </li>
-              </ul>
-              <div>
-                <a
-                  href="https://wa.me/51999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={t("topbar.wsp-aria-label")}
-                  className={styles.wspCta}
-                  title={t("topbar.wsp-aria-label")}
-                >
-                  <FaWhatsapp size={36} />
-                </a>
-              </div>
+                </div>
+                <div className="mt-3">
+                  <a
+                    href="https://wa.me/51999999999"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t("topbar.wsp-aria-label")}
+                    className={styles.wspCta}
+                    title={t("topbar.wsp-aria-label")}
+                  >
+                    <FaWhatsapp size={32} aria-hidden="true" />
+                  </a>
+                </div>
+              </address>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div>
               <span>
                 © {currentYear} Advanced Line Cooling S.A.C.{" "}
-                {t("footer.legal.copyrigth")}
+                {t("footer.legal.copyright")}
               </span>
             </div>
             <div className="text-sm-end">

@@ -7,6 +7,10 @@
   max-width: 140px;
   height: auto;
 }
+.footerLogoImg img,
+.footerLogoImg {
+  max-height: 64px;
+}
 .footerSlogan {
   font-size: 0.9rem;
   line-height: 1.4;
@@ -60,6 +64,13 @@ footer h6 {
 }
 .wspCta:hover,
 .wspCta:focus {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.12);
   transform: scale(1.05);
+}
+.wspCta:focus-visible {
+  outline: 3px solid rgba(0, 184, 82, 0.25);
+}
+.wspCta svg {
+  display: block;
+  color: var(--color-whatsapp);
 }
