@@ -1,4 +1,12 @@
-/* Hero */
+.section {
+  padding: 4rem 0;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 0;
+  }
+}
+
 .hero {
   background: linear-gradient(
       180deg,
@@ -7,14 +15,12 @@
     ),
     url("/banner-low.jpeg") center/cover no-repeat;
   color: var(--color-white);
-  padding: 4rem 0;
 }
 
-.heroContent {
-  padding: 2rem 0;
+.surfaceSecondary {
+  background: var(--color-bg-secondary);
 }
 
-/* About illustration placeholder */
 .aboutIllustration {
   width: 100%;
   min-height: 240px;
@@ -27,7 +33,6 @@
   opacity: 0.85;
 }
 
-/* Products */
 .productCard {
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -41,18 +46,8 @@
   );
 }
 
-/* Why choose us */
 .benefitIcon {
   color: var(--color-titles);
   flex-shrink: 0;
   font-size: 1.25rem;
-}
-
-/* Contact CTA */
-.contactCta {
-  background: linear-gradient(
-    0deg,
-    rgba(3, 18, 49, 0.03),
-    rgba(3, 18, 49, 0.03)
-  );
 }

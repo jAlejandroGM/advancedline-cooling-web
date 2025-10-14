@@ -3,7 +3,9 @@
   --color-black: #000;
   --color-white: #fff;
   --color-bg-primary: #031231;
-  --color-bg-secondary: #041331;
+  --color-bg-secondary: #f2f7fb;
+  --color-bg-terciary: #fdf5f1;
+  --color-divider-soft: rgba(3, 18, 49, 0.1);
   --color-titles: #038de2;
   --color-text: #e0e7eb;
   --color-metal-gray: #a4b4be;

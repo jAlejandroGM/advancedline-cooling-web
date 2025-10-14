@@ -11,39 +11,61 @@ const Home = () => {
   return (
     <>
       {/* Hero section */}
-      <section className={styles.hero} aria-label={t("home.hero.aria")}>
+      <section
+        className={`${styles.hero} ${styles.section}`}
+        aria-label={t("home.hero.aria")}
+      >
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-8">
-              <div className={styles.heroContent}>
-                <h1 className="display-5 fw-bold mb-3">
-                  {t("home.hero.title")}
-                </h1>
-                <p className="lead mb-4">{t("home.hero.subtitle")}</p>
-                <div className="d-flex flex-wrap gap-3">
-                  <Link
-                    to="/productos"
-                    className="btn btn-light px-4 py-2"
-                    aria-label={t("home.hero.ctaProductsAria")}
-                  >
-                    {t("home.hero.ctaProducts")}
-                  </Link>
-                  <Link
-                    to="/contacto"
-                    className="btn btn-outline-light px-4 py-2"
-                    aria-label={t("home.hero.ctaContactAria")}
-                  >
-                    {t("home.hero.ctaContact")}
-                  </Link>
-                </div>
+            <div className="col-12 col-lg-8 py-md-4 d-flex flex-column gap-2">
+              <h1 className="display-5 fw-bold">{t("home.hero.title")}</h1>
+              <p className="lead">{t("home.hero.subtitle")}</p>
+              <div className="d-flex flex-wrap gap-3">
+                <Link
+                  to="/productos"
+                  className="btn btn-light px-4 py-2"
+                  aria-label={t("home.hero.ctaProductsAria")}
+                >
+                  {t("home.hero.ctaProducts")}
+                </Link>
+                <Link
+                  to="/contacto"
+                  className="btn btn-outline-light px-4 py-2"
+                  aria-label={t("home.hero.ctaContactAria")}
+                >
+                  {t("home.hero.ctaContact")}
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* About section */}
+      <section
+        className={`${styles.section}`}
+        aria-labelledby="home-about-title"
+      >
+        <div className="container">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-6">
+              <h2 id="home-about-title" className="h3 mb-3 text-uppercase">
+                {t("home.about.title")}
+              </h2>
+              <p className="lead mb-0">{t("home.about.text")}</p>
+            </div>
+            <div className="col-12 col-md-6">
+              <div className={styles.aboutIllustration} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured products */}
-      <section className="py-5 bg-light" aria-labelledby="home-products-title">
+      <section
+        className={`${styles.section} ${styles.surfaceSecondary}`}
+        aria-labelledby="home-products-title"
+      >
         <div className="container">
           <div className="d-flex justify-content-between align-items-end mb-4">
             <div>
@@ -91,7 +113,7 @@ const Home = () => {
       </section>
 
       {/* Why choose us */}
-      <section className="py-5" aria-labelledby="home-why-title">
+      <section className={styles.section} aria-labelledby="home-why-title">
         <div className="container">
           <h2 id="home-why-title" className="h3 mb-4 text-uppercase">
             {t("home.why.title")}
@@ -113,7 +135,7 @@ const Home = () => {
 
       {/* Contact CTA */}
       <section
-        className={`${styles.contactCta} py-5`}
+        className={`${styles.section} ${styles.surfaceSecondary}`}
         aria-label={t("home.cta.aria")}
       >
         <div className="container">
