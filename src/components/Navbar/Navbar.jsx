@@ -6,7 +6,7 @@ import { Collapse } from "bootstrap";
 import { FaBars } from "react-icons/fa";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
-const Navbar = () => {
+const Navbar = ({ links }) => {
   const { t } = useTranslation();
 
   const toggleNav = () => {
@@ -59,77 +59,25 @@ const Navbar = () => {
           />
         </button>
 
-        {/* Content */}
         <div className="collapse navbar-collapse" id="mainNav">
           <ul className="navbar-nav ms-auto align-items-md-center">
-            <li className="nav-item">
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) =>
-                  `nav-link fs-md-5 ${styles.navLink} ${
-                    isActive ? styles.active : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                {t("navbar.home")}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  `nav-link fs-md-5 ${styles.navLink} ${
-                    isActive ? styles.active : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                {t("navbar.about")}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/knowledge"
-                className={({ isActive }) =>
-                  `nav-link fs-md-5 ${styles.navLink} ${
-                    isActive ? styles.active : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                {t("navbar.knowledge")}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/products"
-                className={({ isActive }) =>
-                  `nav-link fs-md-5 ${styles.navLink} ${
-                    isActive ? styles.active : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                {t("navbar.products")}
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  `nav-link fs-md-5 ${styles.navLink} ${
-                    isActive ? styles.active : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                {t("navbar.contact")}
-              </NavLink>
-            </li>
+            {links.map((link) => (
+              <li className="nav-item" key={link.to}>
+                <NavLink
+                  to={link.to}
+                  {...(link.end ? { end: true } : {})}
+                  className={({ isActive }) =>
+                    `nav-link fs-md-5 ${styles.navLink} ${
+                      isActive ? styles.active : ""
+                    }`
+                  }
+                  onClick={handleNavClick}
+                >
+                  {t(link.labelKey)}
+                </NavLink>
+              </li>
+            ))}
 
-            {/* Language selector only on mobile (Topbar shows it on md+) */}
             <li className="nav-item d-md-none">
               <LanguageSelector />
             </li>
