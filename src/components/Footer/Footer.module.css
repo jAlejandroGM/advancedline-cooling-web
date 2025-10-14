@@ -15,9 +15,6 @@
   font-size: 0.9rem;
   line-height: 1.4;
 }
-.footerLink {
-  transition: color 0.2s ease-in-out;
-}
 .footerLink:hover,
 .footerLink:focus {
   color: var(--color-wood);

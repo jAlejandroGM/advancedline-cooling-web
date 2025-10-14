@@ -18,19 +18,21 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-8 py-md-4 d-flex flex-column gap-2">
-              <h1 className="display-5 fw-bold">{t("home.hero.title")}</h1>
+              <h1 className={`display-5 fw-bold ${styles.heroTitle}`}>
+                {t("home.hero.title")}
+              </h1>
               <p className="lead">{t("home.hero.subtitle")}</p>
               <div className="d-flex flex-wrap gap-3">
                 <Link
                   to="/productos"
-                  className="btn btn-light px-4 py-2"
+                  className={`btn px-4 py-2 ${styles.btnProducts}`}
                   aria-label={t("home.hero.ctaProductsAria")}
                 >
                   {t("home.hero.ctaProducts")}
                 </Link>
                 <Link
                   to="/contacto"
-                  className="btn btn-outline-light px-4 py-2"
+                  className={`btn btn-outline-light px-4 py-2 ${styles.btnContact}`}
                   aria-label={t("home.hero.ctaContactAria")}
                 >
                   {t("home.hero.ctaContact")}

@@ -21,6 +21,19 @@
   background: var(--color-bg-secondary);
 }
 
+.heroTitle {
+  position: relative;
+}
+.heroTitle::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 3px;
+  background: var(--color-wood);
+  margin-top: 0.75rem;
+}
+
 .aboutIllustration {
   width: 100%;
   min-height: 240px;
@@ -50,4 +63,37 @@
   color: var(--color-titles);
   flex-shrink: 0;
   font-size: 1.25rem;
+}
+
+.btnProducts {
+  background-color: var(--color-wood);
+  border-color: var(--color-wood);
+  color: var(--color-white);
+  transition: background-color 0.5s ease;
+}
+.btnProducts:hover,
+.btnProducts:focus {
+  background-color: var(--color-dark-wood);
+  border-color: var(--color-dark-wood);
+  color: var(--color-white);
+}
+.btnProducts:active {
+  background-color: var(--color-dark-wood) !important;
+}
+.btnProducts:focus-visible {
+  outline: 3px solid rgba(200, 106, 44, 0.35);
+}
+
+.btnContact {
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+.btnContact:hover,
+.btnContact:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
+}
+.btnContact:active {
+  background-color: rgba(255, 255, 255, 0.18) !important;
+  color: var(--color-white) !important;
 }
