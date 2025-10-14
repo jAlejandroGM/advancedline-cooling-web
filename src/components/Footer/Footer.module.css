@@ -1,5 +1,5 @@
 .footerTop {
-  background-color: var(--color-wood);
+  background-color: var(--color-bg-primary);
   color: var(--color-white);
 }
 .footerLogoImg {
@@ -20,7 +20,7 @@
 }
 .footerLink:hover,
 .footerLink:focus {
-  color: var(--color-titles);
+  color: var(--color-wood);
   text-decoration: underline;
 }
 .footerBottom {
@@ -35,10 +35,19 @@
   text-decoration: underline;
 }
 
-footer h6 {
-  color: rgb(33, 37, 41);
+.footerTop h6 {
   letter-spacing: 0.1em;
   font-size: 1rem;
+}
+
+.footerTop h6::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--color-wood);
+  border-radius: 2px;
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -64,7 +73,7 @@ footer h6 {
 }
 .wspCta:hover,
 .wspCta:focus {
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.12);
   transform: scale(1.05);
 }
 .wspCta:focus-visible {

@@ -76,7 +76,7 @@ const Footer = () => {
                     className={styles.wspCta}
                     title={t("topbar.wsp-aria-label")}
                   >
-                    <FaWhatsapp size={32} aria-hidden="true" />
+                    <FaWhatsapp size={36} aria-hidden="true" />
                   </a>
                 </div>
               </address>
