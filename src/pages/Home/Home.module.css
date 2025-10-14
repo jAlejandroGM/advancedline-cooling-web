@@ -17,10 +17,6 @@
   color: var(--color-white);
 }
 
-.surfaceSecondary {
-  background: var(--color-bg-secondary);
-}
-
 .heroTitle {
   position: relative;
 }
@@ -32,37 +28,6 @@
   border-radius: 3px;
   background: var(--color-wood);
   margin-top: 0.75rem;
-}
-
-.aboutIllustration {
-  width: 100%;
-  min-height: 240px;
-  border-radius: 0.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--color-titles) 0%,
-    var(--color-wood) 100%
-  );
-  opacity: 0.85;
-}
-
-.productCard {
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.productThumb {
-  height: 160px;
-  background: linear-gradient(
-    135deg,
-    rgba(3, 141, 226, 0.15),
-    rgba(164, 69, 21, 0.15)
-  );
-}
-
-.benefitIcon {
-  color: var(--color-titles);
-  flex-shrink: 0;
-  font-size: 1.25rem;
 }
 
 .btnProducts {
@@ -96,4 +61,39 @@
 .btnContact:active {
   background-color: rgba(255, 255, 255, 0.18) !important;
   color: var(--color-white) !important;
+}
+
+.surfaceSecondary {
+  background: var(--color-bg-secondary);
+}
+
+.aboutIllustration {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-titles) 0%,
+    var(--color-wood) 100%
+  );
+  opacity: 0.85;
+}
+
+.productCard {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.productThumb {
+  height: 160px;
+  background: linear-gradient(
+    135deg,
+    rgba(3, 141, 226, 0.15),
+    rgba(164, 69, 21, 0.15)
+  );
+}
+
+.benefitIcon {
+  color: var(--color-titles);
+  flex-shrink: 0;
+  font-size: 1.25rem;
 }
