@@ -10,8 +10,12 @@ function LanguageSelector() {
       <ul className="list-inline m-0">
         <li className="list-inline-item m-0">
           <button
-            className={`btn btn-link btn-sm text-white ${styles.noUnderline}${
-              i18n.language === "es" ? " fw-bold text-decoration-underline" : ""
+            className={`btn btn-link btn-sm text-white ${styles.noUnderline} ${
+              styles.langOption
+            } ${
+              i18n.language === "es"
+                ? styles.selected + " fw-bold text-decoration-underline"
+                : ""
             }`}
             onClick={() => i18n.changeLanguage("es")}
           >
@@ -21,8 +25,12 @@ function LanguageSelector() {
         /
         <li className="list-inline-item m-0">
           <button
-            className={`btn btn-link btn-sm text-white ${styles.noUnderline}${
-              i18n.language === "en" ? " fw-bold text-decoration-underline" : ""
+            className={`btn btn-link btn-sm text-white ${styles.noUnderline} ${
+              styles.langOption
+            } ${
+              i18n.language === "en"
+                ? styles.selected + " fw-bold text-decoration-underline"
+                : ""
             }`}
             onClick={() => i18n.changeLanguage("en")}
           >

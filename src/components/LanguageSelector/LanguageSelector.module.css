@@ -1,3 +1,13 @@
 .noUnderline {
   text-decoration: none;
 }
+
+.langOption {
+  transition: color 0.2s;
+  color: inherit;
+}
+.langOption.selected,
+.langOption:hover,
+.langOption:focus {
+  color: var(--color-wood) !important;
+}
