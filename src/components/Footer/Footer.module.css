@@ -36,7 +36,7 @@
 }
 
 footer h6 {
-  color: var(--color-titles);
+  color: rgb(33, 37, 41);
   letter-spacing: 0.1em;
   font-size: 1rem;
 }
