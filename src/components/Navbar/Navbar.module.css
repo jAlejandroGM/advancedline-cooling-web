@@ -18,7 +18,7 @@
   position: absolute;
   left: 0;
   bottom: 0.15em;
-  height: 2px;
+  height: clamp(2px, 0.4vw, 3px);
   background-color: var(--color-wood);
   width: 0;
   transition: width 200ms ease-in-out;
@@ -42,13 +42,7 @@
 
 .brandLogo {
   display: block;
-  height: 32px;
+  height: clamp(32px, 5vw, 40px);
   width: auto;
   object-fit: contain;
-}
-
-@media (min-width: 768px) {
-  .brandLogo {
-    height: 40px;
-  }
 }
