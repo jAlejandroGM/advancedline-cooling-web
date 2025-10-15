@@ -1,6 +1,14 @@
 .contact-info {
   font-size: 0.8rem;
 }
+
+header a:hover {
+  color: var(--color-wood);
+}
+
+.FaPhone {
+  transform: scaleX(-1);
+}
 .wsp-btn {
   color: var(--color-whatsapp);
 }

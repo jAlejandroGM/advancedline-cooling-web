@@ -2,6 +2,15 @@
   --color-whatsapp: #25d366;
   --color-black: #000;
   --color-white: #fff;
+  --color-bg-primary: #031231;
+  --color-bg-secondary: #f2f7fb;
+  --color-bg-terciary: #fdf5f1;
+  --color-titles: #038de2;
+  --color-text: #e0e7eb;
+  --color-metal-gray: #a4b4be;
+  --color-darker-gray: #466076;
+  --color-wood: #c86a2c;
+  --color-dark-wood: #a35622;
 }
 
 * {
@@ -16,7 +25,6 @@
   grid-template-rows: auto auto 1fr auto;
   font-family: "Inter", system-ui, -apple-system, sans-serif;
   line-height: 1.5;
-  gap: 6rem;
 }
 
 ul {
@@ -26,4 +34,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.5s ease-in-out, text-decoration-color 0.5s ease-in-out,
+    background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }

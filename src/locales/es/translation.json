@@ -3,5 +3,79 @@
     "email-aria-label": "Enviar correo a contacto@alcooling.com",
     "tel-aria-label": "Llamar al +51 999 999 999",
     "wsp-aria-label": "Chatea por WhatsApp"
+  },
+  "navbar": {
+    "navbar-aria-label": "Navegación principal",
+    "logo-aria-label": "Ir a la página de inicio",
+    "navbar-aria-label-toggler": "Abrir menú principal",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "knowledge": "Conocimiento",
+    "products": "Productos",
+    "contact": "Contáctanos"
+  },
+  "footer": {
+    "logo-aria-label": "Ir a inicio",
+    "slogan": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Breve texto que puede ser tu slogan o una descripción de la propuesta de valor.",
+    "contact": "Contáctanos",
+    "dir": "Lima, Perú",
+    "legal": {
+      "copyright": "Todos los derechos reservados.",
+      "designedBy": "Diseñado y desarrollado con ☕ por",
+      "aria-label": "Ir al perfil de GitHub de Alejandro Guzmán"
+    }
+  },
+  "home": {
+    "hero": {
+      "aria": "Portada de ALCooling",
+      "title": "Soluciones en refrigeración y climatización",
+      "subtitle": "Equipos, instalación y mantenimiento profesional para hogares y empresas.",
+      "ctaProducts": "Ver productos",
+      "ctaProductsAria": "Ir a productos",
+      "ctaContact": "Contáctanos",
+      "ctaContactAria": "Ir a la página de contacto"
+    },
+    "about": {
+      "title": "Sobre nosotros",
+      "text": "Somos especialistas en soluciones térmicas con años de experiencia ofreciendo calidad, eficiencia y respaldo.",
+      "cta": "Conócenos",
+      "ctaAria": "Ir a la página Nosotros"
+    },
+    "products": {
+      "title": "Productos destacados",
+      "subtitle": "Una selección de nuestras líneas más solicitadas",
+      "viewAll": "Ver todos",
+      "cta": "Ver detalles",
+      "items": [
+        {
+          "title": "Aire acondicionado split",
+          "desc": "Eficiencia y confort para espacios residenciales y comerciales."
+        },
+        {
+          "title": "Cámaras de refrigeración",
+          "desc": "Soluciones modulares para conservación y logística en frío."
+        },
+        {
+          "title": "Equipos industriales",
+          "desc": "Rendimiento confiable para procesos y grandes superficies."
+        }
+      ]
+    },
+    "why": {
+      "title": "¿Por qué elegirnos?",
+      "items": [
+        "Atención técnica certificada",
+        "Instalación y mantenimiento garantizados",
+        "Soporte postventa y repuestos",
+        "Eficiencia energética y ahorro"
+      ]
+    },
+    "cta": {
+      "aria": "Llamado a la acción de contacto",
+      "title": "¿Listo para empezar?",
+      "subtitle": "Conversemos tu proyecto y encontremos la mejor solución.",
+      "whatsapp": "Escríbenos por WhatsApp",
+      "contact": "Escríbenos"
+    }
   }
 }
