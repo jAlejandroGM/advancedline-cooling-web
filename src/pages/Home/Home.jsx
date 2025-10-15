@@ -1,9 +1,9 @@
-// Intentionally left blank to remove duplicate initial implementation
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Home.module.css";
 import { FaCheckCircle } from "react-icons/fa";
+import products from "../../data/products";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-8 py-md-4 d-flex flex-column gap-2">
-              <h1 className={`display-5 fw-bold ${styles.heroTitle}`}>
+              <h1 className={`display-5 fw-bold ${styles.sectionTitle}`}>
                 {t("home.hero.title")}
               </h1>
               <p className="lead">{t("home.hero.subtitle")}</p>
@@ -51,7 +51,10 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center g-4">
             <div className="col-12 col-md-6">
-              <h2 id="home-about-title" className="h3 mb-3 text-uppercase">
+              <h2
+                id="home-about-title"
+                className={`h3 mb-3 text-uppercase ${styles.sectionTitle}`}
+              >
                 {t("home.about.title")}
               </h2>
               <p className="lead mb-0">{t("home.about.text")}</p>
@@ -71,7 +74,10 @@ const Home = () => {
         <div className="container">
           <div className="d-flex justify-content-between align-items-end mb-4">
             <div>
-              <h2 id="home-products-title" className="h3 mb-1 text-uppercase">
+              <h2
+                id="home-products-title"
+                className={`h3 mb-1 text-uppercase ${styles.sectionTitle}`}
+              >
                 {t("home.products.title")}
               </h2>
               <p className="text-muted mb-0 small">
@@ -86,24 +92,26 @@ const Home = () => {
           </div>
 
           <div className="row g-4">
-            {t("home.products.items", { returnObjects: true }).map(
-              (item, idx) => (
-                <div key={idx} className="col-12 col-sm-6 col-lg-4">
+            {products.map((p) => {
+              const titleKey = `products.${p.id}.title`;
+              const descKey = `products.${p.id}.desc`;
+              const title = t(titleKey, { defaultValue: p.name });
+              const desc = t(descKey, { defaultValue: p.shortDesc });
+              return (
+                <div key={p.id} className="col-12 col-sm-6 col-lg-4">
                   <div className={`card h-100 ${styles.productCard}`}>
                     <div className={styles.productThumb} aria-hidden="true" />
                     <div className="card-body">
-                      <h3 className="h5 card-title">{item.title}</h3>
-                      <p className="card-text small text-muted mb-3">
-                        {item.desc}
-                      </p>
+                      <h3 className="h5 card-title">{title}</h3>
+                      <p className="card-text small text-muted mb-3">{desc}</p>
                       <Link to="/productos" className="stretched-link">
                         {t("home.products.cta")}
                       </Link>
                     </div>
                   </div>
                 </div>
-              )
-            )}
+              );
+            })}
           </div>
 
           <div className="d-sm-none mt-4">
@@ -117,7 +125,10 @@ const Home = () => {
       {/* Why choose us */}
       <section className={styles.section} aria-labelledby="home-why-title">
         <div className="container">
-          <h2 id="home-why-title" className="h3 mb-4 text-uppercase">
+          <h2
+            id="home-why-title"
+            className={`h3 mb-4 text-uppercase ${styles.sectionTitle}`}
+          >
             {t("home.why.title")}
           </h2>
           <div className="row g-4">
@@ -143,7 +154,9 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center gy-3">
             <div className="col-12 col-md-8">
-              <h2 className="h4 mb-1">{t("home.cta.title")}</h2>
+              <h2 className={`h4 mb-1 ${styles.sectionTitle}`}>
+                {t("home.cta.title")}
+              </h2>
               <p className="mb-0 text-muted">{t("home.cta.subtitle")}</p>
             </div>
             <div className="col-12 col-md-4 d-flex gap-3 justify-content-md-end">

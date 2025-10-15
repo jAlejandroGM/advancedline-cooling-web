@@ -12,10 +12,10 @@
   color: var(--color-white);
 }
 
-.heroTitle {
+.sectionTitle {
   position: relative;
 }
-.heroTitle::after {
+.sectionTitle::after {
   content: "";
   display: block;
   width: 48px;
@@ -72,10 +72,24 @@
     var(--color-wood) 100%
   );
   opacity: 0.85;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
 }
 
 .productCard {
   border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden; /* prevent media overflow when scaling */
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  will-change: transform;
+}
+
+.productCard:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 0.2rem rgba(200, 106, 44, 0.25),
+    0 8px 20px rgba(3, 18, 49, 0.12);
+  border-color: rgba(3, 18, 49, 0.15);
 }
 
 .productThumb {
@@ -85,6 +99,32 @@
     rgba(3, 141, 226, 0.15),
     rgba(164, 69, 21, 0.15)
   );
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  transition: transform 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .productCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(3, 18, 49, 0.12);
+    border-color: rgba(3, 18, 49, 0.15);
+  }
+  .productCard:hover .productThumb {
+    transform: scale(1.02);
+  }
+  .aboutIllustration:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 24px rgba(3, 18, 49, 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutIllustration,
+  .productCard,
+  .productThumb {
+    transition: none;
+  }
 }
 
 .benefitIcon {
