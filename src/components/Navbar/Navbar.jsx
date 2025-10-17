@@ -60,7 +60,7 @@ const Navbar = ({ links }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="mainNav">
-          <ul className="navbar-nav ms-auto align-items-md-center">
+          <ul className="navbar-nav ms-auto align-items-md-center gap-md-3 gap-lg-4">
             {links.map((link) => (
               <li className="nav-item" key={link.to}>
                 <NavLink
