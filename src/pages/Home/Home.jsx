@@ -26,14 +26,14 @@ const Home = () => {
               <div className="d-flex flex-wrap gap-3">
                 <Link
                   to="/productos"
-                  className={`btn px-4 py-2 ${styles.btnProducts}`}
+                  className={`btn rounded-pill px-4 py-2 ${styles.btnProducts}`}
                   aria-label={t("home.hero.ctaProductsAria")}
                 >
                   {t("home.hero.ctaProducts")}
                 </Link>
                 <Link
                   to="/contacto"
-                  className={`btn btn-outline-light px-4 py-2 ${styles.btnContact}`}
+                  className={`btn btn-outline-light rounded-pill px-4 py-2 ${styles.btnContact}`}
                   aria-label={t("home.hero.ctaContactAria")}
                 >
                   {t("home.hero.ctaContact")}
