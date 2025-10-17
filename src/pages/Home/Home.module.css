@@ -62,6 +62,12 @@
   background: var(--color-bg-secondary);
 }
 
+.catalogMascot {
+  width: 320px;
+  height: auto;
+  display: inline-block;
+}
+
 .aboutIllustration {
   width: 100%;
   min-height: 240px;

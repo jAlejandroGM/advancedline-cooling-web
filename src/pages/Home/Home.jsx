@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 import { FaCheckCircle } from "react-icons/fa";
 import products from "../../data/products";
 import ProductCarousel from "../../components/ProductCarousel/ProductCarousel";
+import mascot from "../../assets/mascota-coolcito.png";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -45,20 +46,17 @@ const Home = () => {
       </section>
 
       {/* About section */}
-      <section
-        className={`${styles.section}`}
-        aria-labelledby="home-about-title"
-      >
+      <section className={styles.section} aria-labelledby="home-about-title">
         <div className="container">
           <div className="row align-items-center g-4">
             <div className="col-12 col-md-6">
               <h2
                 id="home-about-title"
-                className={`h3 mb-3 text-uppercase ${styles.sectionTitle}`}
+                className={`h3 text-uppercase ${styles.sectionTitle}`}
               >
                 {t("home.about.title")}
               </h2>
-              <p className="lead mb-0">{t("home.about.text")}</p>
+              <p className="lead">{t("home.about.text")}</p>
             </div>
             <div className="col-12 col-md-6">
               <div className={styles.aboutIllustration} />
@@ -73,8 +71,8 @@ const Home = () => {
         aria-labelledby="home-products-title"
       >
         <div className="container">
-          <div className="d-flex justify-content-between align-items-end mb-4">
-            <div>
+          <div className="row align-items-end g-3">
+            <div className="col-12 col-sm">
               <h2
                 id="home-products-title"
                 className={`h3 mb-1 text-uppercase ${styles.sectionTitle}`}
@@ -85,16 +83,6 @@ const Home = () => {
                 {t("home.products.subtitle")}
               </p>
             </div>
-            <div className="d-none d-sm-block">
-              <Link to="/productos" className="btn btn-outline-primary">
-                {t("home.products.viewAll")}
-              </Link>
-            </div>
-          </div>
-          <div className="d-sm-none mt-4">
-            <Link to="/productos" className="btn btn-outline-primary w-100">
-              {t("home.products.viewAll")}
-            </Link>
           </div>
         </div>
         <ProductCarousel
@@ -110,7 +98,7 @@ const Home = () => {
                 <div className="card-body d-flex flex-column justify-content-between">
                   <div>
                     <h3 className="h5 card-title">{title}</h3>
-                    <p className="card-text small text-muted mb-3">{desc}</p>
+                    <p className="card-text small text-muted">{desc}</p>
                   </div>
                   <Link to="/productos" className="small">
                     {t("home.products.cta")}
@@ -122,8 +110,43 @@ const Home = () => {
         />
       </section>
 
+      {/* Catalog CTA with mascot */}
+      <section className={styles.section} aria-labelledby="home-catalog-cta">
+        <div className="container">
+          <div className="row align-items-center g-4">
+            <div className="col-12 col-md-8">
+              <h2
+                id="home-catalog-cta"
+                className={`h3 text-uppercase ${styles.sectionTitle}`}
+              >
+                {t("home.catalogCta.title")}
+              </h2>
+              <p className="lead">{t("home.catalogCta.text")}</p>
+              <Link
+                to="/productos"
+                className={`btn rounded-pill px-4 py-2 ${styles.btnProducts}`}
+              >
+                {t("home.catalogCta.cta")}
+              </Link>
+            </div>
+            <div className="col-12 col-md-4 text-center">
+              <img
+                src={mascot}
+                alt={t("home.catalogCta.mascotAlt")}
+                className={styles.catalogMascot}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why choose us */}
-      <section className={styles.section} aria-labelledby="home-why-title">
+      <section
+        className={`${styles.section} ${styles.surfaceSecondary}`}
+        aria-labelledby="home-why-title"
+      >
         <div className="container">
           <h2
             id="home-why-title"
@@ -147,10 +170,7 @@ const Home = () => {
       </section>
 
       {/* Contact CTA */}
-      <section
-        className={`${styles.section} ${styles.surfaceSecondary}`}
-        aria-label={t("home.cta.aria")}
-      >
+      <section className={styles.section} aria-label={t("home.cta.aria")}>
         <div className="container">
           <div className="row align-items-center gy-3">
             <div className="col-12 col-md-8">

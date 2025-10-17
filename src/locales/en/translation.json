@@ -47,6 +47,12 @@
       "viewAll": "View all",
       "cta": "See details"
     },
+    "catalogCta": {
+      "title": "Explore our full catalog",
+      "text": "Cooling solutions for heavy‑duty fleets and mining—built to perform in demanding conditions. Reliable engineering, first‑rate products, and processes that meet international standards.",
+      "cta": "View catalog",
+      "mascotAlt": "ALCooling mascot"
+    },
     "why": {
       "title": "Why choose us",
       "items": [

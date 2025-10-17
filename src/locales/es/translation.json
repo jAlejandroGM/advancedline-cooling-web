@@ -47,6 +47,12 @@
       "viewAll": "Ver todos",
       "cta": "Ver detalles"
     },
+    "catalogCta": {
+      "title": "Descubre nuestro catálogo completo",
+      "text": "Soluciones de refrigeración para flotas pesadas y minería, diseñadas para rendir en condiciones exigentes. Ingeniería confiable, productos de primera y procesos que cumplen estándares internacionales.",
+      "cta": "Ver catálogo",
+      "mascotAlt": "Mascota de ALCooling"
+    },
     "why": {
       "title": "¿Por qué elegirnos?",
       "items": [
