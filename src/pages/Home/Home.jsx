@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./Home.module.css";
 import { FaCheckCircle } from "react-icons/fa";
 import products from "../../data/products";
+import ProductCarousel from "../../components/ProductCarousel/ProductCarousel";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -90,36 +91,35 @@ const Home = () => {
               </Link>
             </div>
           </div>
-
-          <div className="row g-4">
-            {products.map((p) => {
-              const titleKey = `products.${p.id}.title`;
-              const descKey = `products.${p.id}.desc`;
-              const title = t(titleKey, { defaultValue: p.name });
-              const desc = t(descKey, { defaultValue: p.shortDesc });
-              return (
-                <div key={p.id} className="col-12 col-sm-6 col-lg-4">
-                  <div className={`card h-100 ${styles.productCard}`}>
-                    <div className={styles.productThumb} aria-hidden="true" />
-                    <div className="card-body">
-                      <h3 className="h5 card-title">{title}</h3>
-                      <p className="card-text small text-muted mb-3">{desc}</p>
-                      <Link to="/productos" className="stretched-link">
-                        {t("home.products.cta")}
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
           <div className="d-sm-none mt-4">
             <Link to="/productos" className="btn btn-outline-primary w-100">
               {t("home.products.viewAll")}
             </Link>
           </div>
         </div>
+        <ProductCarousel
+          items={products}
+          renderItem={(p) => {
+            const titleKey = `products.${p.id}.title`;
+            const descKey = `products.${p.id}.desc`;
+            const title = t(titleKey, { defaultValue: p.name });
+            const desc = t(descKey, { defaultValue: p.shortDesc });
+            return (
+              <div className={`card ${styles.productCard}`}>
+                <div className={styles.productThumb} aria-hidden="true" />
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h3 className="h5 card-title">{title}</h3>
+                    <p className="card-text small text-muted mb-3">{desc}</p>
+                  </div>
+                  <Link to="/productos" className="small">
+                    {t("home.products.cta")}
+                  </Link>
+                </div>
+              </div>
+            );
+          }}
+        />
       </section>
 
       {/* Why choose us */}

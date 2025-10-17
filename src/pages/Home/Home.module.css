@@ -77,9 +77,12 @@
 }
 
 .productCard {
+  height: 320px;
+  width: 320px;
+  max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
-  overflow: hidden; /* prevent media overflow when scaling */
+  overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease,
     border-color 0.25s ease;
   will-change: transform;
@@ -93,6 +96,7 @@
 }
 
 .productThumb {
+  width: 100%;
   height: 160px;
   background: linear-gradient(
     135deg,
