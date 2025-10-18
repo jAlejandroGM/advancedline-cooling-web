@@ -20,7 +20,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-8 py-md-4 d-flex flex-column gap-2">
-              <h1 className={`display-5 fw-bold ${styles.sectionTitle}`}>
+              <h1 className={`fw-bold ${styles.sectionTitle}`}>
                 {t("home.hero.title")}
               </h1>
               <p className="lead">{t("home.hero.subtitle")}</p>
@@ -52,7 +52,7 @@ const Home = () => {
             <div className="col-12 col-md-6">
               <h2
                 id="home-about-title"
-                className={`h3 text-uppercase ${styles.sectionTitle}`}
+                className={`text-uppercase mb-3 ${styles.sectionTitle}`}
               >
                 {t("home.about.title")}
               </h2>
@@ -75,7 +75,7 @@ const Home = () => {
             <div className="col-12 col-sm">
               <h2
                 id="home-products-title"
-                className={`h3 mb-1 text-uppercase ${styles.sectionTitle}`}
+                className={`text-uppercase mb-3 ${styles.sectionTitle}`}
               >
                 {t("home.products.title")}
               </h2>
@@ -117,11 +117,11 @@ const Home = () => {
             <div className="col-12 col-md-8">
               <h2
                 id="home-catalog-cta"
-                className={`h3 text-uppercase ${styles.sectionTitle}`}
+                className={`text-uppercase mb-3 ${styles.sectionTitle}`}
               >
                 {t("home.catalogCta.title")}
               </h2>
-              <p className="lead">{t("home.catalogCta.text")}</p>
+              <p>{t("home.catalogCta.text")}</p>
               <Link
                 to="/productos"
                 className={`btn rounded-pill px-4 py-2 ${styles.btnProducts}`}
@@ -150,7 +150,7 @@ const Home = () => {
         <div className="container">
           <h2
             id="home-why-title"
-            className={`h3 mb-4 text-uppercase ${styles.sectionTitle}`}
+            className={`mb-4 text-uppercase ${styles.sectionTitle}`}
           >
             {t("home.why.title")}
           </h2>
@@ -174,7 +174,7 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center gy-3">
             <div className="col-12 col-md-8">
-              <h2 className={`h4 mb-1 ${styles.sectionTitle}`}>
+              <h2 className={`mb-1 ${styles.sectionTitle}`}>
                 {t("home.cta.title")}
               </h2>
               <p className="mb-0 text-muted">{t("home.cta.subtitle")}</p>
