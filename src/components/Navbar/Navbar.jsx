@@ -60,9 +60,9 @@ const Navbar = ({ links }) => {
         </button>
 
         <div className="collapse navbar-collapse" id="mainNav">
-          <ul className="navbar-nav ms-auto align-items-md-center gap-md-3 gap-lg-4">
+          <ul className="navbar-nav ms-auto align-items-md-center gap-md-2 gap-lg-3">
             {links.map((link) => (
-              <li className="nav-item" key={link.to}>
+              <li className="nav-item text-uppercase" key={link.to}>
                 <NavLink
                   to={link.to}
                   {...(link.end ? { end: true } : {})}
