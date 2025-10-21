@@ -100,7 +100,10 @@ const Home = () => {
                     <h3 className="h5 card-title">{title}</h3>
                     <p className="card-text small text-muted">{desc}</p>
                   </div>
-                  <Link to="/productos" className="small">
+                  <Link
+                    to="/productos"
+                    className={`small ${styles.btnDetails}`}
+                  >
                     {t("home.products.cta")}
                   </Link>
                 </div>

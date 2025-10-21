@@ -15,7 +15,11 @@ function ProductCarousel({ items = [], renderItem, autoplayMs = 3000 }) {
       slidesPerGroup={1}
       loop
       spaceBetween={32}
-      autoplay={{ delay: autoplayMs, disableOnInteraction: false }}
+      autoplay={{
+        delay: autoplayMs,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
       breakpoints={{
         0: { slidesPerView: 1 },
         768: { slidesPerView: 2 },
