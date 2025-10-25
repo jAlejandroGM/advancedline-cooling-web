@@ -45,21 +45,13 @@
       "title": "Featured products",
       "subtitle": "A selection of our most requested lines",
       "viewAll": "View all",
-      "cta": "See details",
-      "items": [
-        {
-          "title": "Split air conditioner",
-          "desc": "Efficiency and comfort for residential and commercial spaces."
-        },
-        {
-          "title": "Refrigeration chambers",
-          "desc": "Modular solutions for cold storage and logistics."
-        },
-        {
-          "title": "Industrial equipment",
-          "desc": "Reliable performance for processes and large areas."
-        }
-      ]
+      "cta": "See details"
+    },
+    "catalogCta": {
+      "title": "Explore our full catalog",
+      "text": "Cooling solutions for heavy‑duty fleets and mining—built to perform in demanding conditions. Reliable engineering, first‑rate products, and processes that meet international standards.",
+      "cta": "View catalog",
+      "mascotAlt": "ALCooling mascot"
     },
     "why": {
       "title": "Why choose us",
@@ -76,6 +68,40 @@
       "subtitle": "Let's discuss your project and find the best solution.",
       "whatsapp": "Message us on WhatsApp",
       "contact": "Write to us"
+    }
+  },
+  "products": {
+    "split-wall": {
+      "title": "Split wall air conditioner",
+      "desc": "Efficiency and comfort for residential and office spaces."
+    },
+    "cassette": {
+      "title": "Cassette",
+      "desc": "Ceiling-installed unit with uniform airflow."
+    },
+    "ducted": {
+      "title": "Ducted systems",
+      "desc": "Integrated and discreet HVAC for large areas."
+    },
+    "vrf": {
+      "title": "VRF/VRV",
+      "desc": "High energy efficiency with zoned control."
+    },
+    "chiller": {
+      "title": "Chiller",
+      "desc": "Industrial solution for high-capacity cooling."
+    },
+    "cooling-tower": {
+      "title": "Cooling tower",
+      "desc": "Efficient heat rejection for centralized systems."
+    },
+    "air-handler": {
+      "title": "Air handling unit (AHU)",
+      "desc": "Air treatment for comfort and processes."
+    },
+    "dehumidifier": {
+      "title": "Dehumidifier",
+      "desc": "Humidity control for healthier environments."
     }
   }
 }

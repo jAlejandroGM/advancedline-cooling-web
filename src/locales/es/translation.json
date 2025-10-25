@@ -45,21 +45,13 @@
       "title": "Productos destacados",
       "subtitle": "Una selección de nuestras líneas más solicitadas",
       "viewAll": "Ver todos",
-      "cta": "Ver detalles",
-      "items": [
-        {
-          "title": "Aire acondicionado split",
-          "desc": "Eficiencia y confort para espacios residenciales y comerciales."
-        },
-        {
-          "title": "Cámaras de refrigeración",
-          "desc": "Soluciones modulares para conservación y logística en frío."
-        },
-        {
-          "title": "Equipos industriales",
-          "desc": "Rendimiento confiable para procesos y grandes superficies."
-        }
-      ]
+      "cta": "Ver detalles"
+    },
+    "catalogCta": {
+      "title": "Descubre nuestro catálogo completo",
+      "text": "Soluciones de refrigeración para flotas pesadas y minería, diseñadas para rendir en condiciones exigentes. Ingeniería confiable, productos de primera y procesos que cumplen estándares internacionales.",
+      "cta": "Ver catálogo",
+      "mascotAlt": "Mascota de ALCooling"
     },
     "why": {
       "title": "¿Por qué elegirnos?",
@@ -76,6 +68,40 @@
       "subtitle": "Conversemos tu proyecto y encontremos la mejor solución.",
       "whatsapp": "Escríbenos por WhatsApp",
       "contact": "Escríbenos"
+    }
+  },
+  "products": {
+    "split-wall": {
+      "title": "Aire acondicionado Split Wall",
+      "desc": "Eficiencia y confort para espacios residenciales y oficinas."
+    },
+    "cassette": {
+      "title": "Cassette",
+      "desc": "Instalación en techo con flujo de aire uniforme."
+    },
+    "ducted": {
+      "title": "Sistemas Ductados",
+      "desc": "Climatización integral y discreta para grandes áreas."
+    },
+    "vrf": {
+      "title": "VRF/VRV",
+      "desc": "Alta eficiencia energética y control zonificado."
+    },
+    "chiller": {
+      "title": "Chiller",
+      "desc": "Solución industrial para enfriamiento de gran capacidad."
+    },
+    "cooling-tower": {
+      "title": "Torre de Enfriamiento",
+      "desc": "Disipación térmica eficiente para sistemas centralizados."
+    },
+    "air-handler": {
+      "title": "Manejadora de Aire (AHU)",
+      "desc": "Tratamiento de aire para confort y procesos."
+    },
+    "dehumidifier": {
+      "title": "Deshumidificador",
+      "desc": "Control de humedad para ambientes saludables."
     }
   }
 }
